@@ -1,0 +1,276 @@
+*{
+    font-family: poppins;
+}
+
+body{
+    background-color: #4a4f4b;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.profile-picture{
+    width: 300.1px;
+    height: 300.1px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+}
+
+.profile-picture img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-container{
+    background-color: whitesmoke;
+    border-radius: 29.04px;
+}
+
+.card-container:nth-child(2){
+    grid-column: 2 / 3; 
+    grid-row: 1 / 2;
+    
+}
+
+.content{
+    padding: 30px;
+    line-height: 24px;
+}
+
+.content h2{
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Skill Bar Styling */
+
+.bar {
+    width: 100%;
+    height: 10px;
+    background: whitesmoke;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.fill {
+    height: 10px;
+    background: #4A8B70;
+    border-radius: 5px;
+}
+
+/* Skill Tags */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.skill-tags span {
+    background: #dde5dd;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+/* Projects Section */
+
+.container-2{
+    background-color: whitesmoke;
+    border-radius: 29.04px;
+    padding: 43px 29px 43px 29px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-container-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 35px;
+    padding: 43px 29px 43px 29px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+
+.project-card{
+    background-color: #dde5dd;
+    border-radius: 29.04px;
+    padding: 21px 19px 21px 19px;
+    width: 280px;
+    height: 581px;
+}
+
+.project-card h4{
+    font-size: 24.px;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.project-card p{
+    font-size: 19.34px;
+
+}
+
+.project-card:nth-child(1){
+    background-color: #4A8B70;
+    color: whitesmoke;
+}
+
+.fa-solid{
+    font-size: 16px;
+    margin-left: 220px;
+}
+
+
+/* Education and Tools Section */
+
+.container-3{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 20px;
+    grid-gap: 20px;
+}
+
+.card-container-3{
+    background-color: whitesmoke;
+    border-radius: 29.04px;
+    padding: 29px;
+}
+
+.education-card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #dde5dd;
+    padding: 27px 21px 27px 21px;
+    border-radius: 29.04px;
+    margin-bottom: 20px;
+}
+
+.education-card:nth-child(2){
+    background-color: #4A8B70;
+    color: whitesmoke;
+}
+
+/* Tools cards*/
+
+.card-container-4{
+    background-color: whitesmoke;
+    border-radius: 29.04px;
+    padding: 29px;
+    text-align: center;
+}
+
+.tools-card{
+    position:relative;
+    background-color: #dde5dd;
+    padding: 38.72px 9.68px 38.72px 9.68px;
+    border-radius: 14.52px;
+    margin-bottom: 20px;
+    
+}
+
+.tools-h{
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(23, 22, 22);
+    color: whitesmoke;
+    padding: 4px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+/* Experience*/
+
+.container-4{
+    margin-left:20px;
+    margin-right:20px;
+    background-color: whitesmoke;
+    border-radius: 29.04px;
+    padding: 32px 27px 31px 27px;
+}
+
+.experience-card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #4A8B70;
+    color:whitesmoke;
+    border-radius: 29.04px;
+    padding: 19px 25px 19px 25px;
+}
+
+.container-5{
+    margin-top: 20px;
+    margin-left:20px;
+    margin-right:20px;
+    background-color: #D76239;
+    color: whitesmoke;
+    border-radius: 29.04px;
+    padding: 32px 27px 31px 27px;
+}
+
+.container-5:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ccc;
+    transition: border 1s ease;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .container,
+    .container-2,
+    .container-3,
+    .container-4,
+    .container-5 {
+      grid-template-columns: 1fr !important;
+      padding: 20px;
+      margin: 0 auto;
+    }
+  
+    .profile-picture,
+    .card-container,
+    .card-container-2,
+    .card-container-3,
+    .card-container-4,
+    .experience-card,
+    .education-card,
+    .tools-card,
+    .project-card {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  
+    .card-container-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skill-tags {
+      justify-content: center;
+    }
+  
+    .fa-solid {
+      margin-left: auto;
+    }
+  }
+  
+
+
